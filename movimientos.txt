@@ -1,0 +1,2 @@
+<p data-anim="arriba" style="--dur: 1.2s; --delay: 0.3s">Texto</p>
+<h3 data-anim="izquierda" data-letras style="--dur: 1s">Agus</h3>

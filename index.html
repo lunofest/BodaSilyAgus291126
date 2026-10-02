@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Sil y Agus - Nos casamos!" />
+    <meta property="og:description"
+        content="¡La cuenta regresiva ha comenzado! Descubre los detalles y confirma tu asistencia." />
+
+    <meta property="og:image" content="https://lunofest.github.io/BodaSilyAgus291126/assets/imagenes/miniatura.png" />
+    <meta property="og:url" content="https://lunofest.github.io/BodaSilyAgus291126/" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image:type" content="image/png" />
+
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=The+Nautigal:wght@400;700&family=ZCOOL+XiaoWei&display=swap">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Nuestra Boda</title>
+</head>
+
+<body>
+
+    <div  class="intro">
+        <div class="intro__content">
+            <p class="intro__subtitle" data-anim="abajo" style="--dur: 1.2s; --delay: 0.3s">TE INVITAMOS A NUESTRA BODA
+            </p>
+            <h1 class="intro__names">
+                <span class="intro__name" data-anim="izquierda" data-letras style="--dur: 2.5s">Sil</span>
+                <span class="intro__and" data-anim="abajo" data-letras style="--dur: 2.5s">y</span>
+                <span class="intro__name" data-anim="derecha" data-letras style="--dur: 2.5s">Agus</span>
+            </h1>
+            <button class="intro__sobre" aria-label="Entrar" data-anim="arriba" style="--dur: 3s; --delay: 0.3s">
+                <img src="assets/imagenes/sobre.webp" alt="Sobre de invitación">
+            </button>
+            <p class="intro__click" data-anim="izquierda" data-letras style="--dur: 1s">TOCA EL SOBRE PARA ENTRAR</p>
+        </div>
+        <audio id="musica" src="assets/musica.mp3" preload="auto"></audio>
+    </div>
+
+    <header class="header">
+        <div class="header__bg" data-anim="abajo" style="--dur: 3s; --delay: 0.3s"></div>
+        <div class="header__content">
+            <div class="header__names">
+                <span class="header__name" data-anim="izquierda" data-letras style="--dur: 3.5s">Sil</span>
+                <span class="header__and" data-anim="abajo" data-letras style="--dur: 3.5s">y</span>
+                <span class="header__name header__name1" data-anim="derecha" data-letras style="--dur: 3.5s">Agus</span>
+            </div>
+            <p class="header__invitado" data-anim="derecha" data-letras style="--dur: 3s">Estan invitados a nuestra Boda
+            </p>
+            <span class="header__flecha">&#8595;</span>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="fecha">
+            <p class="fecha__mes" data-anim="izquierda" data-letras style="--dur: 1s">NOVIEMBRE</p>
+            <div class="fecha__fila">
+                <span class="fecha__lado" data-anim="derecha" data-letras style="--dur: 3s">DOMINGO</span>
+                <span class="fecha__numero" data-anim="abajo" data-letras style="--dur: 3s">29</span>
+                <span class="fecha__lado" data-anim="arriba" data-letras style="--dur: 3s">11:30HS</span>
+            </div>
+            <p class="fecha__anio" data-anim="izquierda" data-letras style="--dur: 3s">2026</p>
+        </section>
+
+        <section class="musica">
+            <div class="musica__player">
+                <svg class="musica__arco" viewBox="0 0 200 55" aria-hidden="true" data-anim="arriba"
+                    style="--dur: 1.2s; --delay: 0.3s">
+                    <defs>
+                        <path id="arcoTexto" d="M 15 50 Q 100 -5 185 50" fill="none"></path>
+                    </defs>
+                    <text>
+                        <textPath href="#arcoTexto" startOffset="50%" text-anchor="middle">Dale Play</textPath>
+                    </text>
+                </svg>
+                <div class="musica__controles">
+                    <button class="musica__btn musica__prev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 5h2v14H6zM20 5v14L9 12z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <button class="musica__btn musica__play" aria-label="Reproducir / Pausar">
+                        <svg class="icono-play" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" fill="currentColor" />
+                        </svg>
+                        <svg class="icono-pause" viewBox="0 0 24 24">
+                            <path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <button class="musica__btn musica__next" aria-label="Siguiente">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 5h2v14h-2zM4 5v14l11-7z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="musica__barra">
+                    <div class="musica__progreso"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="historia">
+            <h2 class="historia__titulo">
+                <span class="historia__nuestra" data-anim="izquierda" style="--dur: 1.2s; --delay: 0.3s">Nuestra</span>
+                <span class="historia__amor" data-anim="derecha" style="--dur: 1.2s; --delay: 0.3s">Historia de
+                    Amor</span>
+            </h2>
+            <p class="parrafo historia__texto">Hace casi dos años, nuestras vidas se cruzaron sin imaginar que nuestros
+                corazones estaban a punto
+                de encontrar el verdadero amor. <br>
+                Navegamos juntos por aguas tranquilas y también turbulentas, pero nuestro barco nunca se hundió. <br>
+                Cómo una triple cuerda nos sostuvo nuestro Creador. <br>
+                Hoy, ante la mirada del Él, elegimos unir nuestras vidas y celebrar este gran amor. <br>
+                Gracias por estar aquí y ser parte de nuestra historia. <br> Jamás olvidaremos que nos acompañaron en
+                este día
+                tan especial. <br> Por siempre en nuestros corazones.</p>
+        </section>
+
+        <section class="itinerarios" data-aos="fade-up">
+
+            <h2 class="titulo itinerario__titulo"><span class="itinerario__nuestro" data-anim="izquierda" data-letras
+                    style="--dur: 1s">Nuestro</span> <span class="itinerario__itinerario" data-anim="arriba" data-letras
+                    style="--dur: 1s">Itinerario</span></h2>
+            <img class="itinerario__icono" src="assets/imagenes/anillos.webp" alt="Anillos">
+            <!-- <h3 class="itinerario__aviso">Domingo 29 de Noviembre del 2026</h3> -->
+            <div class="itinerario">
+
+
+                <div class="line">
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+
+                    <article class="itinerario__item item1">
+                        <img class="itinerario__icon icon1" src="assets/imagenes/iconos/iconoCIVIL.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Ceremonia Civil</h6>
+                            <h6 class="itinerario__name itinerario__name2">11:30hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item2">
+                        <img class="itinerario__icon icon2" src="assets/imagenes/iconos/iconoIGLESIA.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Conferencia Biblica</h6>
+                            <h6 class="itinerario__name itinerario__name2">12:00hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item3">
+                        <img class="itinerario__icon icon3" src="assets/imagenes/iconos/iconoNOVIOS.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Fotografias</h6>
+                            <h6 class="itinerario__name itinerario__name2">12:30hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item4">
+                        <img class="itinerario__icon icon4" src="assets/imagenes/iconos/iconoCENA.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Almuerzo</h6>
+                            <h6 class="itinerario__name itinerario__name2">13:30hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item5">
+                        <img class="itinerario__icon icon5" src="assets/imagenes/iconos/avion.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Nos fuimos</h6>
+                            <h6 class="itinerario__name itinerario__name2">16:00hs</h6>
+                        </div>
+                    </article>
+                    <!-- <article class="itinerario__item item6">
+                        <img class="itinerario__icon icon6" src="assets/imagenes/iconos/iconoFIN.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Cierre de la Fiesta</h6>
+                            <h6 class="itinerario__name itinerario__name2">06:00hs</h6>
+                        </div>
+                    </article> -->
+                </div>
+            </div>
+        </section>
+
+        <h4 class="titulo" data-anim="abajo" data-letras style="--dur: 1s">Detalles</h4>
+
+        <section class="ceremonia">
+            <img class="flor" src="assets/imagenes/flor.webp" alt="" aria-hidden="true">
+            <h2 class="titulo" data-anim="arriba" data-letras style="--dur: 1s">Lugar de la Ceremonia</h2>
+            <p class="parrafo">Queremos compartir con ustedes este momento sagrado delante de Nuestro Creador,
+                donde
+                uniremos nuestras vidas en amor, y bendición. <br>Domingo 29 de Noviembre a las 11:30hs en
+                <br>Salón del Reino, Mexico 1585
+            </p>
+            <a class="boton boton__ceremonia" href="https://maps.app.goo.gl/YjNEM37iYHnQvTT97" target="_blank"
+                rel="noopener">Toca para ver ubicación</a>
+        </section>
+
+        <section class="celebracion">
+            <h2 class="titulo" data-anim="izquierda" data-letras style="--dur: 1s">Lugar de la Celebración</h2>
+            <p class="parrafo">Después de la ceremonia, los esperamos para celebrar juntos esta nueva etapa
+                con alegría y buena compañía. ¡No falten!</p>
+            <p class="parrafo celebracion__direccion">Hotel Hilton Tucumán — Miguel Lillo 365</p>
+            <p class="parrafo">Para mayor comodidad, cada invitado abonará su consumición</p>
+            <a class="boton boton__celebracion" href="https://maps.app.goo.gl/HsjCPK28UnkvJ3Y89" target="_blank"
+                rel="noopener">Toca para ver ubicación</a>
+        </section>
+
+
+        <section class="temporizador">
+            <h2 class="temporizador__titulo" data-anim="izquierda" data-letras style="--dur: 1s">¿CUANTO FALTA?</h2>
+            <p class="temporizador__subtitulo" data-anim="abajo" data-letras style="--dur: 1s">PARA NUESTRA ETERNIDAD
+            </p>
+            <div class="temporizador__grid">
+                <div class="temporizador__bloque">
+                    <span class="temporizador__numero" id="temp-dias">000</span>
+                    <span class="temporizador__label">DAYS</span>
+                </div>
+                <span class="temporizador__separador">:</span>
+                <div class="temporizador__bloque">
+                    <span class="temporizador__numero" id="temp-horas">00</span>
+                    <span class="temporizador__label">HOURS</span>
+                </div>
+                <span class="temporizador__separador">:</span>
+                <div class="temporizador__bloque">
+                    <span class="temporizador__numero" id="temp-minutos">00</span>
+                    <span class="temporizador__label">MINUTES</span>
+                </div>
+                <span class="temporizador__separador">:</span>
+                <div class="temporizador__bloque">
+                    <span class="temporizador__numero" id="temp-segundos">00</span>
+                    <span class="temporizador__label">SECONDS</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="platos">
+            <img class="flor flor_platos" src="assets/imagenes/flor.webp" alt="" aria-hidden="true">
+
+            <h2 class="titulo" data-anim="derecha" data-letras style="--dur: 1s">Menú Especial</h2>
+            <p class="parrafo">Esto es lo que podrán disfrutar en nuestro día especial. <br> Almuerzo Libre: <br></p>
+            <ul class="platos__lista">
+                <li class="platos__item">Carnes</li>
+                <li class="platos__item">Pastas</li>
+                <li class="platos__item">Bebidas</li>
+                <li class="platos__item">Postres</li>
+            </ul>
+            <div class="platos__tarjeta">
+                <p class="parrafo">Para compartir juntos este momento, le dejamos el valor de la consumición, recuerda
+                    que puedes abonar hasta el día 15 de Noviembre para
+                    reservar tu lugar.
+                </p>
+                <p class="platos__precio">$41.600</p>
+                <p class="platos__dato">Alias: <strong>Candysancho</strong> (Brubank)</p>
+                <p class="platos__dato">Titular: <strong>Augusto Cruz</strong></p>
+                <button class="boton boton__alias" type="button">⧉ Copiar alias</button>
+            </div>
+        </section>
+
+        <section class="foto__contenedor">
+            <img class="foto_suelta" src="assets/imagenes/imagen2.webp" alt="">
+        </section>
+
+        <section class="album contenedor block glow" data-aos="flip-left">
+
+      <div class="album__container" id="albumDigital">
+        <h3 class="title title--album">Nuestro Álbum Compartido</h3>
+       
+        <h3 class="parrafo parrafo--album">
+          Queremos inmortalizar este maravilloso momento, guardando fotos y para ello tenemos nuestro álbum compartido,
+          ayudanos subiendo tus mejores capturas!<br> <br>
+          <a class="boton boton__celebracion" href="https://photos.app.goo.gl/4popL1xCn6u5ipvb8">Compartir fotos</a> <br> 
+
+        </h3>
+
+       
+
+      </div>
+
+
+    </section>
+
+
+        <section class="mensaje">
+            <h2 class="titulo " data-anim="arriba" data-letras style="--dur: 1s">Mensaje Especial</h2>
+            <p class="parrafo">Si deseas dejarnos unas palabras, estaremos felices de leer tus buenos deseos para
+                esta nueva etapa de nuestras vidas.</p>
+            <form class="mensaje__form">
+                <input class="mensaje__input" type="text" name="nombre" placeholder="Tu nombre">
+                <p class="error mensaje__error-nombre"></p>
+                <textarea class="mensaje__input mensaje__textarea" name="deseo" rows="4"
+                    placeholder="Escribe aquí tu deseo..."></textarea>
+                <p class="error mensaje__error-deseo"></p>
+                <button class="boton boton__mensaje boton__mensaje-agus" type="button">Enviar a
+                    Agus</button>
+                <button class="boton boton__mensaje boton__mensaje-sil" type="button">Enviar a Sil</button>
+            </form>
+        </section>
+
+        <section class="confirmacion">
+            <img class="flor flor_confirmacion" src="assets/imagenes/flor.webp" alt="" aria-hidden="true">
+
+            <h2 class="titulo titulo__confirmacion" data-anim="izquierda" data-letras style="--dur: 1s">Confirmación de
+                Asistencia</h2>
+            <p class="parrafo">Para reservar tu lugar en el almuerzo solo basta con dar tu Sí hasta el <strong
+                    class="confirmacion__fecha">03 de octubre del 2026</strong>. </p>
+            <div class="confirmacion__opciones">
+                <button type="button" class="confirmacion__opcion" data-valor="Sí asistiré">Sí Asistiré</button>
+                <button type="button" class="confirmacion__opcion" data-valor="No asistiré">No Asistiré</button>
+            </div>
+            <p class="error confirmacion__error-opcion"></p>
+            <input class="mensaje__input confirmacion__nombre" type="text" placeholder="Tu nombre">
+            <p class="error confirmacion__error-nombre"></p>
+            <button class="boton boton__confirmacion boton__confirmar-agus" type="button">Confirmar a
+                Agus</button>
+            <button class="boton boton__confirmacion boton__confirmar-sil" type="button">Confirmar a Sil</button>
+        </section>
+
+        <section class="foto__contenedor">
+            <img class="foto_suelta" src="assets/imagenes/imagen3.webp" alt="">
+        </section>
+
+        <section class="frase__final">
+            <img class="frase__flor" src="assets/imagenes/flor.webp" alt="" aria-hidden="true">
+
+            <p class="frase__parrafo">
+                Tu conmigo, yo contigo y Dios con nosotros. <br>
+                Hay momentos en la vida que se vuelven inolvidables, y compartirlos con las personas que amamos los hace
+                aún más especiales. <br>
+                Hoy comienza una nueva etapa para nosotros, y queremos vivir este hermoso momento rodeados de quienes
+                ocupan un lugar especial en nuestro corazón. <br>
+                Nos encantaría contar con tu presencia para celebrar juntos este día tan importante. <br>
+                Te esperamos con mucho cariño. <br><br>
+
+                Sil y Agus
+            </p>
+        </section>
+
+
+
+    </main>
+
+
+    <footer class="footer__final1">
+        <div class="footer__inner1">
+            <div class="footer__brand1">
+                <p class="footer__text1">
+                    Página creada por <strong>Luno Digitales</strong>
+                    para la boda <strong> Sil y Agus </strong>.<br>
+                    Todos los derechos reservados. <br>Visítanos en:
+                </p>
+
+            </div>
+
+
+            <a class="footer__site1" href="https://www.luno.net.ar" target="_blank" rel="noopener">www.luno.net.ar</a>
+            <div class="footer__social3">
+                <p class="footer__follow1">Síguenos en nuestras redes</p>
+                <a class="icon-link1"
+                    href="https://www.instagram.com/lunodigitales?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Instagram de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"
+                            fill="none" />
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+                        <circle cx="18.2" cy="5.8" r="0.7" fill="currentColor" />
+                    </svg>
+                </a>
+                <a class="icon-link1" href="https://www.facebook.com/profile.php?id=61581720891655" target="_blank"
+                    rel="noopener" aria-label="Facebook de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <style>
+        /* ///////////////// footer /////////////////////// */
+
+
+        .footer__final1 {
+            background: linear-gradient(180deg, #414141 0%, #161616 100%);
+            color: #ffffff;
+            padding: 1.5em 0;
+
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            font-size: 12px;
+            width: clamp(100px, 100%, 1800px);
+            text-align: center;
+            margin: 7em auto 0;
+        }
+
+        .footer__inner1 {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        .footer__text1 {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .footer__text1 strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .footer__site1 {
+            display: inline-block;
+            margin-top: 8px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .footer__site1:hover {
+            text-decoration: underline;
+        }
+
+        .footer__social3 {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        .footer__follow1 {
+            margin: 0;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .footer__final1 .icon-link1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .footer__final1 .icon-link1 svg {
+            width: 28px !important;
+            height: 28px !important;
+            display: block;
+            margin: 0;
+        }
+
+        .footer__final1 .icon-link1:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
